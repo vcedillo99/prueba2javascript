@@ -1,4 +1,3 @@
-'use strict'
 const GI = {
 	createElement (tag, atributes) {
 		let element = document
@@ -15,3 +14,9 @@ const to_do = [
     'Comprar entradas para el cine',
 ]
 
+function listartodo(params) {
+    let lista = document.getElementById('listatodo')
+    params.forEach(e => {
+        document.createElement('input', 'checkbox')
+    });
+}
